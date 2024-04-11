@@ -3,6 +3,7 @@ import * as Yup from "yup";
 import { nanoid } from "nanoid";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { useId } from "react";
+import { useDispatch } from "react-redux";
 
 const formInitialValues = {
   name: "",
@@ -10,6 +11,7 @@ const formInitialValues = {
 };
 
 const ContactForm = ({ onAdd }) => {
+  const dispatch = useDispatch();
   const nameId = useId();
   const numberId = useId();
 
