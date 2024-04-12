@@ -4,7 +4,7 @@ import { setFilter } from "../../redux/filtersSlice";
 
 const SearchBox = () => {
   const dispatch = useDispatch();
-  const filter = useSelector((state) => state.contacts.filter);
+  const filter = useSelector((state) => state.filters.name);
   const onFilter = (e) => dispatch(setFilter(e.target.value));
   return (
     <div>
