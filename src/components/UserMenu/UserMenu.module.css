@@ -1,0 +1,10 @@
+.menuWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.menuName {
+  font-weight: 700;
+  color: rgb(247, 105, 11);
+}
