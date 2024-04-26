@@ -10,6 +10,7 @@ import { Suspense } from "react";
 import Loader from "./components/Loader/Loader";
 import { selectIsRefreshing } from "./redux/auth/selectors.js";
 import Layout from "./components/Layout/Layout.jsx";
+import { refreshUser } from "./redux/auth/operations.js";
 
 const ContactsPage = lazy(() =>
   import("./pages/ContactsPage/ContactsPage.jsx")
