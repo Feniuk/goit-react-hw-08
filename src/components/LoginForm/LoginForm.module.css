@@ -1,0 +1,30 @@
+.form {
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.formButton {
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 4px;
+  height: 30px;
+  display: flex;
+  box-shadow: none;
+}
+
+.label {
+  margin-right: 5px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 4px;
+}

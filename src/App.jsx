@@ -1,16 +1,13 @@
 import "./components/App.css";
-import ContactList from "./components/ContactList/ContactList";
-import SearchBox from "./components/SearchBox/SearchBox";
-import ContactForm from "./components/ContactForm/ContactForm";
 import { useEffect, lazy } from "react";
-import { fetchContacts } from "./redux/contactsOps";
 import { useDispatch, useSelector } from "react-redux";
 import { Route, Routes } from "react-router-dom";
 import { Suspense } from "react";
-import Loader from "./components/Loader/Loader";
 import { selectIsRefreshing } from "./redux/auth/selectors.js";
 import Layout from "./components/Layout/Layout.jsx";
 import { refreshUser } from "./redux/auth/operations.js";
+import RestrictedRoute from "./components/RestrictedRoute.jsx";
+import PrivateRoute from "./components/PrivateRoute.jsx";
 
 const ContactsPage = lazy(() =>
   import("./pages/ContactsPage/ContactsPage.jsx")

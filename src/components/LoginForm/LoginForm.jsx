@@ -1,4 +1,4 @@
-import styles from "./RegistrationForm.module.css";
+import styles from "./LoginForm.module.css";
 import * as Yup from "yup";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { useId } from "react";
