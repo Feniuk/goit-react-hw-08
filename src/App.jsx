@@ -11,11 +11,15 @@ import Loader from "./components/Loader/Loader";
 import { selectIsRefreshing } from "./redux/auth/selectors.js";
 import Layout from "./components/Layout/Layout.jsx";
 
-const ContactsPage = lazy(() => import("./pages/ContactsPage.jsx"));
-const HomePage = lazy(() => import("./pages/HomePage.jsx"));
+const ContactsPage = lazy(() =>
+  import("./pages/ContactsPage/ContactsPage.jsx")
+);
+const HomePage = lazy(() => import("./pages/HomePage/HomePage.jsx"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage.jsx"));
-const LoginPage = lazy(() => import("./pages/LoginPage.jsx"));
-const RegistrationPage = lazy(() => import("./pages/RegistrationPage.jsx"));
+const LoginPage = lazy(() => import("./pages/LoginPage/LoginPage.jsx"));
+const RegistrationPage = lazy(() =>
+  import("./pages/RegistrationPage/RegistrationPage.jsx")
+);
 
 function App() {
   const dispatch = useDispatch();

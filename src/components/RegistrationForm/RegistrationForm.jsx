@@ -47,19 +47,30 @@ const RegistrationForm = () => {
           <label htmlFor={nameId} className={styles.label}>
             Username{" "}
           </label>
-          <Field type="name" name="name" id={nameId} />
-          <ErrorMessage name="name" as="span" />
+          <Field type="name" name="name" autoComplete="username" id={nameId} />
+          <ErrorMessage name="name" component="span" />
 
           <label htmlFor={emailId} className={styles.label}>
             Email{" "}
           </label>
-          <Field type="email" name="email" id={emailId} />
-          <ErrorMessage name="email" as="span" />
+          <Field
+            type="email"
+            name="email"
+            autoComplete="email"
+            placeholder="mail@gmail.com"
+            id={emailId}
+          />
+          <ErrorMessage name="email" component="span" />
 
           <label htmlFor={passwordId} className={styles.label}>
             Password{" "}
           </label>
-          <Field type="password" name="password" id={passwordId} />
+          <Field
+            type="password"
+            name="password"
+            autoComplete="current-password"
+            id={passwordId}
+          />
           <ErrorMessage name="password" as="span" />
         </div>
         <button className={styles.formButton} type="submit">
